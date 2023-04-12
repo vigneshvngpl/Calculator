@@ -11,42 +11,42 @@
     <script src="https://kit.fontawesome.com/756a7f5104.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="w-25 container mt-5 calcu " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+    <div class="w-50 container mt-5 calcu " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
         <h3 class="p-2  ">CASIO</h3>
         <input type="text" class="form-control" id="result" style="background-color: rgb(176, 184, 186); border: 1px rgb(146, 137, 137) inset; " >
-        <div class="W-100 container mt-3 row ">
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="AllClear()"  class="btn btn-light b1 ">AC</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick=""  class="btn btn-light b1 ">MC</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('%')"  class="btn btn-light b1 ">%</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('/')"   class="btn btn-light b1 ">/</button></div>              
+        <div class="W-100 container mt-3 " style="display: flex; justify-content: space-evenly;" >
+            <button type="button " onclick="AllClear()"  class="btn btn-light b1 p-1 me-1">AC</button>
+            <button type="button " onclick=""  class="btn btn-light b1 p-1 me-1 ">MC</button>
+            <button type="button " onclick="displayData('%')"  class="btn btn-light b1 p-1 me-1 ">%</button>
+            <button type="button " onclick="displayData('/')"   class="btn btn-light b1 p-1 me-1 ">/</button>           
            </div>
-           <div class="W-100 container mt-3 row ">
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(7)"  class="btn btn-light b1 ">7</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(8)" class="btn btn-light b1 ">8</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(9)" class="btn btn-light b1 ">9</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('*')"  class="btn btn-light b1 ">*</button></div>              
+           <div class="W-100 container mt-3 " style="display: flex; justify-content: space-evenly;">
+             <button type="button " onclick="displayData(7)"  class="btn btn-light b1 p-1 me-1 ">7</button>
+            <button type="button " onclick="displayData(8)" class="btn btn-light b1 p-1 me-1 ">8</button>
+            <button type="button " onclick="displayData(9)" class="btn btn-light b1 p-1 me-1 ">9</button>
+            <button type="button " onclick="displayData('*')"  class="btn btn-light b1 p-1 me-1 ">*</button>            
            </div>
-           <div class="W-100 container mt-3 row ">
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(4)" class="btn btn-light b1 ">4</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(5)" class="btn btn-light b1 ">5</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(6)" class="btn btn-light b1 ">6</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('-')" class="btn btn-light b1 ">-</button></div>              
+           <div class="W-100 container mt-3 " style="display: flex; justify-content: space-evenly;" >
+            <button type="button " onclick="displayData(4)" class="btn btn-light b1 p-1 me-1 ">4</button>
+            <button type="button " onclick="displayData(5)" class="btn btn-light b1 p-1 me-1 ">5</button>
+            <button type="button " onclick="displayData(6)" class="btn btn-light b1 p-1 me-1 ">6</button>
+            <button type="button " onclick="displayData('-')" class="btn btn-light b1 p-1 me-1 ">-</button>             
            </div>
-           <div class="W-100 container mt-3 row ">
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(1)" class="btn btn-light b1 ">1</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(2)"  class="btn btn-light b1 ">2</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData(3)" class="btn btn-light b1 ">3</button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('+')" class="btn btn-light b1 ">+</button></div>              
+           <div class="W-100 container mt-3 "  style="display: flex; justify-content: space-evenly;">
+            <button type="button " onclick="displayData(1)" class="btn btn-light b1 p-1 me-1 ">1</button>
+            <button type="button " onclick="displayData(2)"  class="btn btn-light b1 p-1 me-1 ">2</button>
+            <button type="button " onclick="displayData(3)" class="btn btn-light b1 p-1 me-1 ">3</button>
+            <button type="button " onclick="displayData('+')" class="btn btn-light b1 p-1 me-1 ">+</button>             
            </div>
 
-           <div class="W-100 container mt-3 row ">
+           <div class="W-100 container mt-3 mb-3"  style="display: flex; justify-content: space-evenly;">
             
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2 mb-2" ><button type="button " onclick="displayData(0)" class="btn btn-light b1 ">0</button></div>  
-             <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="displayData('.')" class="btn btn-light b1 ">.</button></div>
-             <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="backspace()" class="btn btn-light b1 "><i class="fa-solid fa-delete-left"></i></button></div>
-            <div class="col-lg-3 col-md-6 col-sm-12 p-2" ><button type="button " onclick="evalExprsn()"  class="btn btn-light b1 ">=</button></div> 
+            <button type="button " onclick="displayData(0)" class="btn btn-light b1 p-1 me-1 ">0</button>
+             <button type="button " onclick="displayData('.')" class="btn btn-light b1 p-1 me-1 ">.</button>
+             <button type="button " onclick="backspace()" class="btn btn-light b1 p-1 me-1 "><i class="fa-solid fa-delete-left"></i></button>
+            <button type="button " onclick="evalExprsn()"  class="btn btn-light b1 p-1 me-1 ">=</button> 
                        
-           </div>
+           </div><br>
        
           
 
